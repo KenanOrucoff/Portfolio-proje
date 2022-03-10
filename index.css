@@ -1,8 +1,10 @@
-*{
+*{  margin: 0;
+    padding: 0;
     text-decoration: none;
     list-style-type: none;
     font-family: 'Rubik', sans-serif;
     scroll-behavior:smooth;
+    
     
 }
 .container{
@@ -33,8 +35,9 @@
     color: #754ef9;
     transition: all 0.5s ease;
 }
-.logo{
+.logo h1{
     color: #754ef9;
+    padding: 5px;
 }
 .content{
     display: flex;
@@ -380,7 +383,7 @@ textarea{
       }
       #mobile-menu {
         position: absolute;
-        top: 5%;
+        top: 2%;
         right: 10%;
         transform: translate(5%, 20%);
       }
@@ -406,17 +409,19 @@ textarea{
         transition: all 0.5s ease;
       }
       .menu__navbar.active {
-        background: #fafafa;
+        background: white;
         left: 0;
         opacity: 1;
         z-index: 1;
-        transition: all 1.5s ease;
+        transition: all 0.5s ease;
+        height: 35%;
+        padding: 5px;
         
       }
       .menu__navbar li{
-          margin: 10px;
-          padding: 0;
-          text-align: center;
+        margin: 10px;
+        padding: 0;
+        text-align: center;
       }
       
       .content{
@@ -441,7 +446,7 @@ textarea{
           flex-direction: column;
       }
       .container{
-          width: unset;
+          width: auto;
       }
       .form-control{
           width: 140%;
@@ -449,7 +454,5 @@ textarea{
       textarea{
           width: 140%;
       }
-      .menu__navbar{
-          width: 90%;
-      }
+      
 }
